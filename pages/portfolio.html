@@ -9,121 +9,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="header-logo" href="#">Web<span class="header-logo-white">Studio</span></a>
-            <ul class="header-nav-list">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <div class="container-logo">
+                    <a class="header-logo" href="#">Web<span class="header-logo-white">Studio</span></a>
+                </div>
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a class="header-link current" href="../index.html">Студія</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-link" href="./pages/portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header-list">
                 <li>
-                    <a class="header-link" href="../index.html">Студія</a>
+                    <a class="header-link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-
-
-                <li><a class="header-link current" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="header-link" href="#">Контакти</a></li>
+                <li>
+                    <a class="header-link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-
-        <ul class="header-list">
-            <li><a class="header-link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-link-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
 
-    </main>
-    <section class="btn">
-        <h1 class="visually-hidden">Портфоліо </h1>
-        <ul class="btn-list">
-            <li class="btn-item">
-                <button class="btn-item-btn" type="button">Усі</button>
-            </li>
-            <li class="btn-item">
-                <button class="btn-item-btn" type="button">Веб-сайти</button>
-            </li>
-            <li class="btn-item">
-                <button class="btn-item-btn" type="button">Додатки</button>
-            </li>
-            <li class="btn-item">
-                <button class="btn-item-btn" type="button">Дизайн</button>
-            </li>
-            <li class="btn-item">
-                <button class="btn-item-btn" type="button">Маркетинг</button>
-            </li>
-        </ul>
 
-        <ul class="services-list">
-            <li class="services-item">
-                <img class="services-foto" src="../images/img.png" width="370" alt="Приклад сайту">
-                <h3 class="services-title">Технокряк</h3>
-                <p class="services-text">Веб-сайт</p>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_2.png" width="370" alt="Постер">
-                    <h3 class="services-title">Постер New Orlean vs Golden Star</h3>
-                    <p class="services-text">Дизайн</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_3.png" width="370" alt="Ресторан Seafood">
-                    <h3 class="services-title">Ресторан Seafood</h3>
-                    <p class="services-text">Додаток</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_4.png" width="370" alt="Навушники">
-                    <h3 class="services-title">Проєкт Prime</h3>
-                    <p class="services-text">Маркетинг</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_5.png" width="370" alt="Boxes">
-                    <h3 class="services-title">Проєкт Boxes</h3>
-                    <p class="services-text"> Додаток</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_6.png" width="370" alt="Приклад сайту">
-                    <h3 class="services-title">Inspiration has no Borders</h3>
+        <section class="btn">
+            <h1 class="visually-hidden">Портфоліо </h1>
+            <ul class="btn-list">
+                <li class="btn-item">
+                    <button class="btn-item-btn" type="button">Усі</button>
+                </li>
+                <li class="btn-item">
+                    <button class="btn-item-btn" type="button">Веб-сайти</button>
+                </li>
+                <li class="btn-item">
+                    <button class="btn-item-btn" type="button">Додатки</button>
+                </li>
+                <li class="btn-item">
+                    <button class="btn-item-btn" type="button">Дизайн</button>
+                </li>
+                <li class="btn-item">
+                    <button class="btn-item-btn" type="button">Маркетинг</button>
+                </li>
+            </ul>
+
+            <ul class="services-list">
+                <li class="services-item">
+                    <img class="services-foto" src="../images/img.png" width="370" alt="Приклад сайту">
+                    <h3 class="services-title">Технокряк</h3>
                     <p class="services-text">Веб-сайт</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_7.png" width="370" alt="Journal">
-                    <h3 class="services-title">Видання Limited Edition</h3>
-                    <p class="services-text">Дизайн</p>
-                </a>
-            </li>
-            <li class="services-item">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_8.png" width="370" alt="Lab">
-                    <h3 class="services-title">Проєкт LAB</h3>
-                    <p class="services-text">Маркетинг</p>
-                </a>
-            </li>
-            <li class="services-item-title">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="services-foto" src="../images/img_9.png" width="370" alt="Приклад сайту">
-                    <h3 class="services-title">Growing Business</h3>
-                    <p class="services-text">Додаток</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <footer class="footer">
-        <a class="footer-link" href="#">Web<span class="footer-link-white">Studio</span></a>
-        <address class="footer">
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_2.png" width="370" alt="Постер">
+                        <h3 class="services-title">Постер New Orlean vs Golden Star</h3>
+                        <p class="services-text">Дизайн</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_3.png" width="370" alt="Ресторан Seafood">
+                        <h3 class="services-title">Ресторан Seafood</h3>
+                        <p class="services-text">Додаток</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_4.png" width="370" alt="Навушники">
+                        <h3 class="services-title">Проєкт Prime</h3>
+                        <p class="services-text">Маркетинг</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_5.png" width="370" alt="Boxes">
+                        <h3 class="services-title">Проєкт Boxes</h3>
+                        <p class="services-text"> Додаток</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_6.png" width="370" alt="Приклад сайту">
+                        <h3 class="services-title">Inspiration has no Borders</h3>
+                        <p class="services-text">Веб-сайт</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_7.png" width="370" alt="Journal">
+                        <h3 class="services-title">Видання Limited Edition</h3>
+                        <p class="services-text">Дизайн</p>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_8.png" width="370" alt="Lab">
+                        <h3 class="services-title">Проєкт LAB</h3>
+                        <p class="services-text">Маркетинг</p>
+                    </a>
+                </li>
+                <li class="services-item-title">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="services-foto" src="../images/img_9.png" width="370" alt="Приклад сайту">
+                        <h3 class="services-title">Growing Business</h3>
+                        <p class="services-text">Додаток</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer conteiner-foo">
+        <div class="container-footer-link">
+            <a class="footer-link" href="#">Web<span class="footer-link-white">Studio</span></a>
+        </div>
+        <address class="footer container-footer-address">
         <ul class="footer-list">
             <li class="footer-item">
             <a class="footer-google" href="https://goo.gl/maps/yJjjyWyiivkurBnj7" target="_blank"
