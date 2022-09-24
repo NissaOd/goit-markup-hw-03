@@ -12,6 +12,7 @@ body {
     background-color: var(--main-title-color);
     color: var(--color-text-past-thre);
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 
@@ -72,8 +73,7 @@ li {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
 .container {}
@@ -189,6 +189,7 @@ li {
     background: var(--color-logo);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: transparent;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -196,7 +197,6 @@ li {
     cursor: pointer;
     letter-spacing: 0.06em;
     color: var(--main-title-color);
-    border-color: transparent;
     display: flex;
     align-items: center;
     text-align: center;
@@ -351,11 +351,31 @@ li {
 
 /* btn */
 
-.btn {}
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0;
+}
 
-.btn-list {}
+.btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 126px;
+    margin-bottom: 50px;
+    padding: 0;
+}
 
-.btn-item {}
+.btn-item {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+}
 
 .btn-item-btn {
     font-family: inherit;
@@ -385,13 +405,20 @@ li {
 
 .services {}
 
-.services-list {}
+.services-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-.services-item {}
+.services-item {
+    padding: 0;
+}
 
 .services-foto {}
 
 .services-title {
+    margin: 20px 0 4px 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -406,9 +433,9 @@ li {
     color: var(--color-text-past-thre);
 }
 
-.services-text> {}
-
-.services-item-title {}
+.services-text {
+    margin: 0 0 50px 0;
+}
 
 
 /* footer */
