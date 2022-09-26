@@ -6,6 +6,7 @@
     --color-text: #212121;
     --color-text-past-thre: #757575;
     --color-footer: rgba(255, 255, 255, 0.6);
+    --color-btn: #F5F4FA;
 }
 
 body {
@@ -90,10 +91,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.container-logo {
-    display: flex;
 }
 
 
@@ -237,12 +234,18 @@ li {
     ;
 }
 
+
+/* specially section */
+
+.specialty-conteiner {
+    padding: 94px 0;
+}
+
 .specialty {
     max-width: 1200px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    padding: 94px 0;
 }
 
 .specialty-list {
@@ -313,8 +316,9 @@ li {
 /* team */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--color-btn);
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .team-conteiner {
@@ -332,9 +336,10 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-text-past-two);
-    /* margin-bottom: 50px; */
-    padding-top: 94px;
     padding-bottom: 50px;
+    /* margin-bottom: 50px; */
+    /* padding-top: 94px;
+    padding-bottom: 50px; */
 }
 
 .team-list {}
@@ -408,10 +413,7 @@ li {
     margin-bottom: 50px;
 }
 
-.btn-item {
-    /* border-radius: 4px;
-    border-color: transparent; */
-}
+.btn-item {}
 
 .btn-item-btn {
     font-family: inherit;
@@ -422,9 +424,9 @@ li {
     cursor: pointer;
     letter-spacing: 0.03em;
     color: var(--color-text-past-two);
-    background-color: var(--color-background);
+    background-color: var(--color-btn);
     padding: 6px 22px;
-    background-color: transparent;
+    border-color: transparent;
     border-radius: 4px;
 }
 
@@ -464,9 +466,9 @@ li {
     padding-left: 24px;
     padding-right: 24px;
     text-align: left;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid var(--color-btn);
+    border-bottom: 1px solid var(--color-btn);
+    border-left: 1px solid var(--color-btn)E;
 }
 
 .services-title {
@@ -475,6 +477,7 @@ li {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-text-past-two);
+    margin-bottom: 4px;
 }
 
 .services-text {
@@ -491,21 +494,17 @@ li {
 
 .footer {
     background-color: #2F303A;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .conteiner-foo {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 }
-
-.container-footer-link {}
 
 .container-footer-address {
     margin-top: 20px;
@@ -533,9 +532,7 @@ li {
 
 .footer-list {}
 
-.footer-item {}
-
-.footer-item-google .footer-item-mail {
+.footer-item {
     margin-bottom: 9px;
 }
 
